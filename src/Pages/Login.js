@@ -7,6 +7,7 @@ function Login() {
     <div>
       <h1>Login Page</h1>
       <Link to="/dashboard"><Button>Dashboard Button</Button></Link>
+      <Link to="/register"><Button>Register Button</Button></Link>
     </div>
   );
 }
