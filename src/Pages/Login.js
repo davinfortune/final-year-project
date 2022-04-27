@@ -1,17 +1,23 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-import {Button} from 'react-bootstrap';
 import LoginUser from '../ProcessingComponents/Database/LoginUser';
-import ColoredLine from '../StyleCompenents/ColoredLine';
+import '../CSS/Login.css';
 
 function Login() {
   return (
-    <div class = "container">
-      <h1>Login Page</h1>
-            <LoginUser/>
-            <ColoredLine color="red"/>
-      <Link to="/dashboard"><Button>Dashboard Button</Button></Link>
-      <Link to="/register"><Button>Register Button</Button></Link>
+    <div>
+      <div class = "background">
+      </div>
+      <div class = "loginContainer">
+        <div class = "centerWrapper">
+            <div class = "loginTitle">
+              <h1>Login</h1>
+            </div>
+            <div class = "coreContent">
+                    <LoginUser/>
+                    <button type="button" onClick={() => window.location = "/register"}id = "registerButton" href="/register">Register</button>
+            </div>
+        </div>
+      </div>
     </div>
   );
 }

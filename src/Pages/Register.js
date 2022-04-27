@@ -2,26 +2,27 @@ import {React, useState} from 'react';
 import {Link} from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import ColoredLine from '../StyleCompenents/ColoredLine';
-import "../CSS/Register.css";
 import RegisterUser from '../ProcessingComponents/Database/RegisterUser';
+import "../CSS/Register.css";
+import "../CSS/Login.css";
+
 
 
 function Register() {
 
   return (
-    <div>
-      <form action="" >
-        <div class = "container">
-            <RegisterUser/>
-            <ColoredLine color="red"/>
+        <div>
+        <div class = "background">
         </div>
-
-        <div class="container signin">
-            <p>Already have an account? <a href="#">Sign in</a>.</p>
-            <Link to="/"><Button variant="outline-secondary">Go Back</Button></Link>
+        <div class = "loginContainer">
+          <div class = "centerWrapper">
+              <div class = "coreContent">
+              <RegisterUser/>
+                <p>Already have an account? <a href="/">Sign in</a>.</p>
+              </div>
+          </div>
         </div>
-        </form>             
-    </div>
+      </div>
   );
 }
 

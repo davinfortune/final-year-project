@@ -10,10 +10,10 @@ function RegisterUser() {
     const [telephone, setTelephone] = useState("");
 
     const handleOnSubmit = async (e) => {
-        if(password == confirmpassword){
+        if(password === confirmpassword){
             e.preventDefault();
             let result = await fetch(
-            'http://localhost:5000/register', {
+            'https://final-year-project-davin.herokuapp.com/register', {
                 method: "post",
                 body: JSON.stringify({ username, email, password, country, telephone }),
                 headers: {
@@ -69,10 +69,8 @@ function RegisterUser() {
                 <input type="text" placeholder="Telephone" required
                 value={telephone} onChange={(e) => setTelephone(e.target.value)} />
             </div>
-
-                <ColoredLine color = "red"/>
                 <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                <button type="submit" class="registerbtn"
+                <button type="submit" id = "registerButton"
                 onClick={handleOnSubmit}>Submit</button>
 
     

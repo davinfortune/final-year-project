@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import ColoredLine from '../../StyleCompenents/ColoredLine';
 
 function LoginUser() {
     const [username, setUsername] = useState("");
@@ -8,7 +7,7 @@ function LoginUser() {
     const handleOnSubmit = async (e) => {
         e.preventDefault();
         let result = await fetch(
-        'http://localhost:5000/login', {
+        'https://final-year-project-davin.herokuapp.com/login', {
             method: "post",
             body: JSON.stringify({ username, password }),
             headers: {
@@ -32,10 +31,10 @@ function LoginUser() {
 
             <div className = "formInput">
                 <label>Password</label>
-                <input type="password" placeholder="Password" required
+                <input type="password" placeholder="Password"  required
                 value={password} onChange={(e) => setPassword(e.target.value)} />
             </div>
-            <button type="submit" onClick={handleOnSubmit}>Login</button>
+            <button type="submit" onClick={handleOnSubmit} id = "loginButton">Login</button>
         </form>
     );
 }

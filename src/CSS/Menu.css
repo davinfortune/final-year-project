@@ -1,0 +1,61 @@
+body {
+    color: #D5D5D5;
+    background-color:#121212;
+  }
+
+.nav-menu {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.08);
+    height: 50px;
+    width : 35%;
+    min-width: 400px;
+    max-width:750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    border-radius: 15px/50%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#background-blurred {
+    height: 50px;
+    width : 35%;
+    min-width: 400px;
+    max-width:750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background-image: url('Images/menubackground.png');
+    background-position: center; 
+    border-radius: 15px/50%;
+    position: absolute;
+    animation: animatedBackground 15s ease infinite alternate-reverse;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 50%;
+    }
+    to {
+      background-position: 100% 50%;
+    }
+  }
+  
+.menucontainer {
+    position:relative;
+    width: 100%;
+}
+
+hr {
+    width: 1; 
+    height: 20px !important;
+    color: black !important;
+}

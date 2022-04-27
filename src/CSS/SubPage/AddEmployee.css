@@ -1,0 +1,81 @@
+.addEmployeeContainer {
+    width: 40% !important;
+    position: absolute;
+    z-index: 1;
+    border: none !important;
+    border-radius: 25px;
+    margin-top: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    background-color: #1D1D1D;
+    height: 75vh;
+}
+
+h1{
+    margin-top: 10%;
+    text-align: left;
+    margin-left: 12.5%;
+}
+
+.addEmployeeContainer {
+    margin-top: 5% !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+input {
+    border-radius: 10px;
+}
+
+.eaBackground {
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/menubackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+#addEmployeeButton {
+    width: 75%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 5%;
+    height: 5vh;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background-color: #121212;
+    color: #D5D5D5;
+    border: 0px solid transparent;
+    border-radius: 25px/50%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#addEmployeeButton:hover {
+    background-image: url('../Images/menubackground.png');
+    animation: registerAnimation 5s ease infinite;
+}
+
+p {
+    text-align: center;
+}
+
+@keyframes addEmployeeAnimation {
+    from {
+      background-position: 25% 50%;
+    }
+    to {
+      background-position: 25% 100%;
+    }
+  }

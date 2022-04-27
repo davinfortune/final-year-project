@@ -1,0 +1,184 @@
+.detailsContainer {
+    height: 75vh;
+    width: 85% !important;
+    border-radius: 25px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: #1D1D1D;
+    position: absolute;
+    border: 5px solid transparent;
+    font-weight: bold;
+}
+
+.detailsEmployeeContainer {
+    width: 80%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    float: right;
+    position: relative;
+    border: 5px solid transparent;
+}
+
+.detailsTitle {
+    width: 20%;
+    height: 100%;
+    float: left;
+    border: 5px solid transparent;
+    position: relative;
+    display: block;
+}
+
+.detailsName {
+    border: 5px solid transparent;
+    height: 80%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    border-radius: 15px;
+    background-color: #121212;
+    position: relative;
+    display: block;
+}
+
+.detailsName h1 {
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+.detailsName p {
+    margin-left: 5%;
+    margin-right: auto;
+    text-align: left;
+}
+
+.detailsChartContainer {
+    width: 60%;
+    height: 50%;
+    background-color: #121212;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+}
+
+.ratingTableContainer {
+    width:45%;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    height: 40%;
+    margin-top:2.5%;
+    margin-left: 2.5%;
+    float: left;
+    background-color: #121212;
+}
+
+.allInfoContainer {
+    width:45%;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    height: 40%;
+    margin-top:2.5%;
+    margin-right:2.5%;
+    float: right;
+    background-color: #121212;
+}
+
+.allInfoContainer h1 {
+    border: 5px solid transparent;
+    width:70%;
+    margin-top: 2.5%;
+    margin-left: 5%;
+}
+
+.performanceTableHolder {
+    height: 70%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.chartHolder {
+    border: 40px solid transparent;
+    height: 85%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.legendHolder {
+    height:10%;
+    width: 40%;
+    border-radius: 10px;
+    float:right;
+}
+
+.ratingTableContainer h1 {
+    border: 5px solid transparent;
+    width:70%;
+    margin-top: 2.5%;
+    margin-left: 5%;
+}
+
+.ratingTableContainer form {
+    border: 5px solid transparent;
+    width:90%;
+    margin-top: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.hoursInput {
+    width:20%;
+    float:left;
+}
+
+.hoursInput input {
+    text-align: right;
+    justify-content: right;
+}
+
+.buttonContainer {
+    border: 5px solid transparent;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+    margin-top:2.5%;
+    float:right;
+}
+
+#submitRatingButton:hover {
+    background-image: url('../Images/menubackground.png');
+    animation: ratingAnimation 5s ease infinite alternate-reverse;
+}
+
+#submitRatingButton {
+    width: 75%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 100%;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background-color: #1D1D1D;
+    color: #D5D5D5;
+    border: 0px solid transparent;
+    border-radius: 25px/50%;
+    font-size: 1em;
+    font-weight: bold;
+    float: right;
+}
+
+
+@keyframes ratingAnimation {
+    from {
+      background-position: 25% 100%;
+    }
+    to {
+      background-position: 25% 50%;
+    }
+  }

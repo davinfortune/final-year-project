@@ -1,7 +1,7 @@
-async function CurrentUser() {
+async function CurrentEmployee() {
 
     let result = await fetch(
-        'https://final-year-project-davin.herokuapp.com/currentUser', {
+        'https://final-year-project-davin.herokuapp.com/getemployee', {
             method: "get",
             headers: {
                 'Content-Type': 'application/json'
@@ -14,4 +14,4 @@ async function CurrentUser() {
 
 }
 
-export default CurrentUser;
+export default CurrentEmployee;
